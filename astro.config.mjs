@@ -6,5 +6,9 @@ import solidJs from '@astrojs/solid-js';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://leafy-boba-e484ed.netlify.app',
+	output: 'hybrid',
+	experimental: {
+		hybridOutput: true,
+	},
 	integrations: [react(), solidJs()],
 });
